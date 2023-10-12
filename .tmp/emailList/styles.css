@@ -1,0 +1,45 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13pt;
+  margin-left: 2em;
+  margin-right: 2em;
+  width: 35em;
+}
+h1 {
+  color: teal;
+}
+h2 {
+  color: teal;
+}
+label {
+  font-weight: bold;
+  float: left;
+  width: 10em;
+  margin-bottom: 1em;
+}
+input[type="text"],
+input[type="email"],
+input[type="date"] {
+  width: 20em;
+  height: 1.5em;
+  margin-left: 1em;
+  margin-bottom: 1em;
+}
+input[type="radio"],
+input[type="checkbox"] {
+  margin-left: 1em;
+  margin-bottom: 1em;
+}
+input[type="submit"] {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13pt;
+}
+br {
+  clear: both;
+}
+select {
+  width: 16em;
+  height: 1.5em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13pt;
+}
