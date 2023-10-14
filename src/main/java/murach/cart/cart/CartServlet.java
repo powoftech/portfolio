@@ -15,15 +15,14 @@ import murach.cart.business.LineItem;
 import murach.cart.business.Product;
 import murach.cart.data.ProductIO;
 
-@WebServlet(urlPatterns = { "/work/exercises/cart/*" }, name = "CartServlet")
+@WebServlet(urlPatterns = { "/work/exercises/cart/cart" }, name = "CartServlet")
 public class CartServlet extends HttpServlet {
+    final String subfolder = "/work/exercises/cart";
 
     @Override
     protected void doPost(HttpServletRequest request,
             HttpServletResponse response)
             throws ServletException, IOException {
-
-        final String urlSlug = "/pages/exercises/cart";
 
         ServletContext sc = getServletContext();
 
@@ -59,7 +58,7 @@ public class CartServlet extends HttpServlet {
                 quantity = 1;
             }
 
-            String path = sc.getRealPath(urlSlug + "/products.txt");
+            String path = sc.getRealPath(subfolder + "/products.txt");
             Product product = ProductIO.getProduct(productCode, path);
 
             LineItem lineItem = new LineItem();
@@ -77,7 +76,6 @@ public class CartServlet extends HttpServlet {
             url = "/checkout.jsp";
         }
 
-        sc.getRequestDispatcher(urlSlug + url)
-                .forward(request, response);
+        sc.getRequestDispatcher(subfolder + url).forward(request, response);
     }
 }
