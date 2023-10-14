@@ -12,7 +12,7 @@
     <h1>Order completed</h1>
     <p>Click on the browser's Back button to continue.</p>
 
-    <footer style="position: fixed; bottom:0; width: 100%;">
+    <footer style="position: fixed; bottom:0; width: inherit;">
         <hr
             style=" display: block; border-top: 3px solid #bbb; border-style: inset; border-width: 2px; margin: 1em auto 1em auto;">
         <div style="height: 100px; display: flex; align-items: center; justify-content: center; padding: 0;">
