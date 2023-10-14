@@ -26,6 +26,4 @@ replay_pid*
 # target
 /target
 /src/main/webapp/node_modules
-/src/main/webapp/.prettierignore
-/src/main/webapp/.prettierrc
 
